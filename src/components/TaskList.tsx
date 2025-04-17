@@ -87,7 +87,7 @@ const TaskList: React.FC<TaskListProps> = ({ onEdit }) => {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">Filter bkky Status</label>
+            <label className="block text-sm font-medium text-gray-700 mb-2">Filter by Status</label>
             <select
               value={statusFilter}
               onChange={(e) => setStatusFilter(e.target.value as Task['status'] | 'all')}
@@ -156,7 +156,7 @@ const TaskList: React.FC<TaskListProps> = ({ onEdit }) => {
                 </button>
               </div>
             </div>
-            <div className="mt-4">
+            {/* <div className="mt-4">
               <select
                 value={task.status}
                 onChange={(e) => handleStatusChange(task.id, e.target.value as Task['status'])}
@@ -166,7 +166,7 @@ const TaskList: React.FC<TaskListProps> = ({ onEdit }) => {
                 <option value="in-progress">In Progress</option>
                 <option value="completed">Completed</option>
               </select>
-            </div>
+            </div> */}
           </div>
         ))
       )}
